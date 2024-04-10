@@ -1,90 +1,80 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
-
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+# Fantasy Animals Adventure
 
 ## Deadline
-This assignment is due before the next scheduled class.
+Please complete this task by the end of the week, prior to the next exercise session.
 
 ## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+You can check the assignment submission guidelines on the course webpage, under the assignments section.
 
 ## Preparation
-
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
-
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+- Ensure you have completed and understood Module 2: Looking Inside Classes.
+- Familiarize yourself with the relevant materials accessible via the course's resources page.
 
 ## Learning Goals
+- Understand the structure and purpose of Java classes.
+- Explore instance variables and methods including constructors, getters, and setters.
+- Practice object instantiation and method invocation.
+- Conceptualize the use of encapsulation in software design.
+- Manipulate object fields using methods to maintain privacy.
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+## Assignment
 
-## Troubleshooting Guide
+In the mythical land of Codelandia, a variety of Fantasy Animals roam the landscapes. Your mission is to model these enchanted creatures using Java, bringing them to life through code. Let your imagination run wild; these creatures can be anything from flying cats to swimming dragons.
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+### Exercise A: Introduction to Fantasy Animals
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+Start by creating a new Java file named `FantasyAnimal.java` and define a class within it named `FantasyAnimal`. This class is where you will describe the features and behaviors of your fantasy animals.
 
-## Assignment Details
+In the `main` method, declare variables to represent one fantasy animal's name, health points, magical power, and whether it is enchanted. Initialize these variables with appropriate values.
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+```java
+class FantasyAnimal {
+    public static void main(String[] args) {
+        // Declare variables here
+    }
+}
+```
 
-### Task 1: Class Creation
+Test your code to ensure it runs without errors.
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+### Exercise B: A Family of Fantasy Animals
 
-### Task 2: Defining Properties
+Expand your fantasy world by creating two more fantasy animals, adding up to a total of three. Print information about each animal separately.
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+```java
+class FantasyAnimal {
+    public static void main(String[] args) {
+        // Declare more animals and print their info
+    }
+}
+```
+
+### Exercise C: Fields and Objects
+
+Refactor your code to utilize class fields (variables defined inside the class but outside any method). Instead of holding data for a fantasy animal in the `main` method, these fields should represent the state of a fantasy animal object.
 
 - String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+- int healthPoints
+- int magicalPower
+- boolean enchanted
 
-### Task 3: Spawning Galaxy Pets
+Instantiate new `FantasyAnimal` objects in the `main` method and assign them properties.
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+### Exercise D: Constructors and Encapsulation
 
-### Task 4: Encapsulation with Getters and Setters
+To make creating fantasy animals easier, implement a constructor in the `FantasyAnimal` class. This constructor should take parameters for name, healthPoints, magicalPower, and enchanted status, and assign these to the object's fields.
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+Incorporate encapsulation by setting fields to `private` and creating getters and setters for each field.
 
-### Task 5: Constructing with Constructors
+### Exercise E: Let Them Interact
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+Add methods to your `FantasyAnimal` class, so the animals can interact. For instance, create a method that allows one animal to transfer some of its magical power to another.
 
-### Task 6: Display Information
+### Exercise F: Beyond the Basics
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+1. Implement a `displayInfo()` method that prints all details about the fantasy animal.
+2. Simulate an interaction in the main method where one fantasy animal transfers some of its magical power to another.
 
-### Task 7: The Cosmic Challenge
+### Exercise G: Understanding Encapsulation
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
-
-### Task 8: Understanding Scope and Shadowing
-
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
-
-## Final Checklist
-
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
-
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+Examine examples of variable shadowing and how to use the `this` keyword to resolve ambiguity related to field and parameter names. Be prepared to discuss your findings and solutions.
